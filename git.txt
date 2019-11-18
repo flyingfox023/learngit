@@ -39,3 +39,4 @@ git merge xxx  把xxx分支合并过来
 git branch -d xxx   删除xxx分支
 test branch
 test master
+test master and dev
