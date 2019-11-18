@@ -38,3 +38,4 @@ git checkout master(或者git switch master) 切换到主分支
 git merge xxx  把xxx分支合并过来
 git branch -d xxx   删除xxx分支
 test branch
+test mashahater
