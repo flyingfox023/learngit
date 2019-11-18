@@ -2,7 +2,7 @@ git init 初始化
 git add xxx.txt 添加到仓库
 git commit 提交到仓库  （git commit -m "提交声明")
 git status 可以让我们时刻掌握仓库当前的状态
-git diff xxx.txt  查看不同
+git diff xxx.txt  查看不同(工作区和暂存区的区别)
 git log 命令显示从最近到最远的提交日志
 git reset --hard HEAD^(或者commit id) 回到上一个版本（或者某一次提交的版本）
 git diff HEAD -- xxx.txt  命令可以查看工作区和版本库里面最新版本的区别
