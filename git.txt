@@ -3,3 +3,4 @@ git add xxx.txt 添加到仓库
 git commit 提交到仓库  （git commit -m "提交声明")
 git status 可以让我们时刻掌握仓库当前的状态
 git diff xxx.txt  查看不同
+git log 命令显示从最近到最远的提交日志
