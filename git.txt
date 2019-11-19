@@ -48,3 +48,4 @@ git stash list 现场工作列表
 3.git stash apply stash@{0} 可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash
 
 git cherry-pick xxxxxxx<commit_id>  master上改动（如debug）转移到当前分支上
+github append
