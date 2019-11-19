@@ -1,4 +1,4 @@
-git命令简短总结
+git命令总结
 git init 初始化
 git add xxx.txt 添加到仓库
 git commit 提交到仓库  （git commit -m "提交声明")
