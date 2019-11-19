@@ -54,3 +54,15 @@ git push origin master   master分支是主分支，因此要时刻与远程同�
 git push origin xxx    xxx分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步
 git clone git@github.com:xxxxxx/xxxxxx.git  只能抓取主分支
 git checkout -b xxx origin/xxx  抓取其他分支
+git push origin xxx 因为冲突失败就  git pull  如果还是失败  说明分支之间没有连接 就 git branch --set-upstream-to=origin/xxx xxx 再git pull 最后解决冲突上传提交
+git rebase  暂时不理解，待议。。。。。
+git tag xxx  打标签在最新的分支上
+git tag 查看所有标签（按字典顺序）
+git tag xxx commit_id  给某个commit_id打标签，标签总是跟某个commit_id绑定的
+git show xxx 查看标签信息
+git tag -a tag_name -m "xxxxxxx" commit_id  创建带说明的标签
+git tag -d xxx  删除某个标签
+git push origin :refs/tags/xxx  如果已经推送标签到了远程，除了本地删，也要远程删
+git push origin xxx  推送标签到远程
+git push origin --tags   推送所有标签到远程
+
