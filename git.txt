@@ -48,3 +48,9 @@ git stash list 现场工作列表
 3.git stash apply stash@{0} 可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash
 
 git cherry-pick xxxxxxx<commit_id>  master上改动（如debug）转移到当前分支上
+git remote 查看远程库的信息
+git remote -v 显示更详细的信息
+git push origin master   master分支是主分支，因此要时刻与远程同步
+git push origin xxx    xxx分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步
+git clone git@github.com:xxxxxx/xxxxxx.git  只能抓取主分支
+git checkout -b xxx origin/xxx  抓取其他分支
