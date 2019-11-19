@@ -38,6 +38,7 @@ git branch 查看当前分支
 git checkout master(或者git switch master) 切换到主分支
 git merge xxx(或者git merge --no-ff -m "xxxxxxxxx" xxx)  把xxx分支合并过来(--no-ff参数，表示禁用Fast forward，可以看到分支的commit操作，能看出曾经合并过)
 git branch -d xxx   删除xxx分支
+git branch -D xxx   强行删除xxx分支(修改了但是没有合并，用-d会删除失败，可用-D强删)
 git log --graph命令可以看到分支合并图。
 git stash 把当前工作现场储存起来，等以后恢复现场后继续工作
 git stash list 现场工作列表
