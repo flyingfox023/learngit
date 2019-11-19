@@ -35,5 +35,14 @@ rm xxx.txt 删除文件后两种选择
 git checkout -b xxx(或者git switch -c xxx) 创建xxx分支(相当于  git branch dev    git checkout xxx)
 git branch 查看当前分支
 git checkout master(或者git switch master) 切换到主分支
-git merge xxx  把xxx分支合并过来
+git merge xxx(或者git merge --no-ff -m "xxxxxxxxx" xxx)  把xxx分支合并过来(--no-ff参数，表示禁用Fast forward，可以看到分支的commit操作，能看出曾经合并过)
 git branch -d xxx   删除xxx分支
+git log --graph命令可以看到分支合并图。
+git stash 把当前工作现场储存起来，等以后恢复现场后继续工作
+git stash list 现场工作列表
+恢复工作现场
+1.git stash apply  恢复后，stash内容并不删除，你需要用git stash drop来删除
+2.git stash pop   恢复的同时把stash内容也删了
+3.git stash apply stash@{0} 可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash
+
+git cherry-pick xxxxxxx<commit_id>  master上改动（如debug）转移到当前分支上
