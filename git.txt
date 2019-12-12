@@ -1,6 +1,7 @@
 git命令总结
 git init 初始化
 git add xxx.txt 添加到仓库
+git add --all 添加所有到仓库
 git commit 提交到仓库  （git commit -m "提交声明")
 git status 可以让我们时刻掌握仓库当前的状态
 git diff xxx.txt  查看不同(工作区和暂存区的区别)
@@ -28,9 +29,15 @@ rm xxx.txt 删除文件后两种选择
 1.本地关联到github
 	(1)git remote add origin git@github.com:xxxxxxxxxxxx/xxxxx.git 先关联
 	(2)git push -u origin master   推送本地到github(第一次)
-	(3)git push origin master    推送到github(非第一次) 
 2.github关联到本地
 	git clone git@github.com:xxxxxxxxxxxx/xxxxx.git
+git push origin master    推送到github(非第一次) 
+git pull 拉代码
+
+解除本地和远程的关联
+git remote rm origin(origin 是远程仓库在本地Git中的名称)
+查看项目地址
+git remote -v
 
 
 git checkout -b xxx(或者git switch -c xxx) 创建xxx分支(相当于  git branch dev    git checkout xxx)
@@ -65,4 +72,10 @@ git tag -d xxx  删除某个标签
 git push origin :refs/tags/xxx  如果已经推送标签到了远程，除了本地删，也要远程删
 git push origin xxx  推送标签到远程
 git push origin --tags   推送所有标签到远程
+
+设置别名(--global参数是全局参数，也就是这些命令在这台电脑的所有Git仓库下都有用。如果不加，那只针对当前的仓库起作用。)
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.br branch
 
