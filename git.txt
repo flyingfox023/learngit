@@ -31,8 +31,10 @@ rm xxx.txt 删除文件后两种选择
 2.github关联到本地
 	git clone git@github.com:xxxxxxxxxxxx/xxxxx.git
 
-推送
+建立关联后推送
 git push origin master    推送到github(非第一次)
+不建立关联强行推送
+git push -f git@github.com:xxxxxxxxxx/xxxxxxx.git master
 查看关联的远程库
 git remote -v
 解除与远程库的关联
