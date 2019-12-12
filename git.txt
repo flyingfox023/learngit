@@ -27,11 +27,16 @@ rm xxx.txt 删除文件后两种选择
 远程仓库跟本地关联（两种情况）
 1.本地关联到github
 	(1)git remote add origin git@github.com:xxxxxxxxxxxx/xxxxx.git 先关联
-	(2)git push -u origin master   推送本地到github(第一次)
-	(3)git push origin master    推送到github(非第一次) 
+	(2)git push -u origin master   推送本地到github(第一次) 
 2.github关联到本地
 	git clone git@github.com:xxxxxxxxxxxx/xxxxx.git
 
+推送
+git push origin master    推送到github(非第一次)
+查看关联的远程库
+git remote -v
+解除与远程库的关联
+git remote rm origin
 
 git checkout -b xxx(或者git switch -c xxx) 创建xxx分支(相当于  git branch dev    git checkout xxx)
 git branch 查看当前分支
