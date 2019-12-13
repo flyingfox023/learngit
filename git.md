@@ -94,6 +94,19 @@ hello world
   hello world 
 </pre>
 
+$$ x \href{why-equal.html}{=}y^2+1$$
+$ x = {-b \pm \sqrt{b^2-4ac} \over 2a}. $
+$x={-b \pm \sqrt{b^2-4ac} \over 2a}.$
+
+分隔符
+***
+分隔符
+---
+分隔符
+************
+Markdown[^1]
+[^1]:Markdown是一种纯文本标记语言
+<cngrassroot@google.com>
 ## 初始化
 git init
 ## 提交到仓库
