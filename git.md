@@ -1,4 +1,49 @@
 # git命令基本用法总结
+一级标题
+====================
+二级标题
+-------------------
+[TOC]
+> hello world!
+
+> hello world
+hello world
+hellow word
+
+> aaaa
+>> bbbb
+>>> ccccccccccccccccccc
+
+标记`Helloween`为代码块
+
+```
+if a=b:
+ print("right")
+else:
+ print("wrong")
+```
+
+我是文字……
+
+    <div>   
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+```javascript
+var num = 0;
+for (var i = 0; i < 5; i++) {
+    num+=i;
+}
+console.log(num);
+```
+
+[百度](http://www.baidu.com "百度一下")
+[百度][2]
+[2]:http://www.baidu.com "再百度”
+![name][01]
+[01]:./ai.jpg "人工智能"
 ## 初始化
 git init
 ## 提交到仓库
