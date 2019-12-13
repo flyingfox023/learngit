@@ -9,8 +9,9 @@
 > hello world	hello world	hellow word
 
 > aaaa
->> bbbb
->>> ccccccccccccccccccc
+> > bbbb
+> >
+> > > ccccccccccccccccccc
 
 标记`Helloween`为代码块
 
@@ -43,6 +44,49 @@ console.log(num);
 
 ![name][01]
 [01]: ./ai.jpg "人工智能"
+
+1.one
+2.two
+3.three
+
+1. one
+2. two
+3. three
+
+* one
+* two
+* three
+
+* one
+
+		var a=10;//与上行保持距离
+
+-[x] 选项一
+-[] 选项二
+-[]    【选项3】
+
+|a  | b  |c
+|:-:|:- |-:
+| 居中|左对齐|右对齐
+|=========|===========|=============
+
+×斜体×
+××加粗××
+×××加粗+斜体×××
+~~删除线~~
+<i>斜体</i>
+<b>加粗</b>
+<em>强调</em>
+Z<sup>a</sup>
+Z<sub>a</sub>
+<kbd>Ctrl</kbd>
+
+<pre>
+hello world 
+         hi
+  hello world 
+</pre>
+
 ## 初始化
 git init
 ## 提交到仓库
@@ -62,10 +106,10 @@ git diff HEAD -- xxx.txt  命令可以查看工作区和版本库里面最新版
 git checkout -- xxx.txt 意思就是，把xxx.txt文件在工作区的修改全部撤销.
 
                 这里有两种情况：
-
+    
                 一种是xxx.txt自修改后还没有被放到暂存区，现在，撤销修改就回到
                 和版本库一模一样的状态；
-
+    
                 一种是xxx.txt已经添加到暂存区后，又作了修改，现在，撤销修改就
                 回到添加到暂存区后的状态。
 git reset HEAD xxx.txt  可以把暂存区的修改撤销掉（unstage），重新放回工作区
