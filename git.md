@@ -6,11 +6,7 @@
 [TOC] 
 > hello world!
 
-> hello world
-
-hello world
-
-hellow word
+> hello world	hello world	hellow word
 
 > aaaa
 >> bbbb
@@ -43,11 +39,9 @@ console.log(num);
 
 [百度](http://www.baidu.com "百度一下")
 
-[百度][2]
-[2]:http://www.baidu.com "再百度"
+[百度][2]	[2]:http://www.baidu.com "再百度"
 
-![name][01]
-[01]:./ai.jpg "人工智能"
+![name][01]	[01]:./ai.jpg "人工智能"
 ## 初始化
 git init
 ## 提交到仓库
