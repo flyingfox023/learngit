@@ -41,7 +41,8 @@ console.log(num);
 
 [百度][2]	[2]:http://www.baidu.com "再百度"
 
-![name][01]	[01]:./ai.jpg "人工智能"
+![name][01]
+[01]: ./ai.jpg "人工智能"
 ## 初始化
 git init
 ## 提交到仓库
